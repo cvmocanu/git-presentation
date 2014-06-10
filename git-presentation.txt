@@ -1,0 +1,127 @@
+15:00 Start GitFlow process (overview compared to SVN)
+15:45 Git installation (mac/windows/unix)
+16:00 Working with Git, branching, pushing and solving conflicts
+17:00 Hands on session(s) (where current git-users can leave if they need to)
+18:30 (Dinner & questions)
+
+================================================================================
+
+GIT presentation
+----------------
+
+Tools
+-----
+- IntelliJ
+- TortoiseGit
+
+Concepts:
+---------
+DAG of commits
+branches are labels
+    explain the HEAD label (points to the current branch)
+tags are immutable labels
+
+
+Commands (show slides of how each command modified the DAG):
+------------------------------------------------------------
+setup username and email
+    explain that there are global/user/repo (todo: get the proper names) config files, overriding each other
+setup ssh keys
+    - generate keys
+        - windows: puttygen
+        - linux/mac: openssh
+    - add them to the github account
+todo: check the github gui for windows
+git init
+git ignore (or manually edit a per-directory .gitignore file)
+    - explain that git only tracks files, so if you want to track an empty dir, just put a .gitignore file inside, and put a comment in that file stating why you want an empty dir)
+git add (explain difference with 'svn add', not used to add files, used to stage a snapshot of changes; demo on how to use it for a added, modified, and deleted file)
+git rm (just a simplification for "rm" + "git add"; can also use "rm" + "git rm"; can also use "git add -u ." to stage all stuff - todo: see what the -u flag is doing)
+explain that git tracks content and it "guesses" renames
+    - please do the rename and the refactoring in separate commits to help git see the rename, and thus reduce chance of merge conflicts because of renames)
+git commit (explain that it's local and you need to use push; allows you to work when the server is not accessible)
+git checkout -- (todo: see how to use this to revert changes in the working dir; at the presentation use tools)
+git merge [--no-ff] [--ff-only]
+git rebase [--interactive]
+    - be careful
+git reflog (in case you made a mistake)
+git commit --amend
+explain that you should NOT change public history
+explain fast-forward
+explain remotes (and that you can have multiple)
+git fetch
+git pull [--rebase]
+    warn that it uses merge by default and it can make the history dirty
+git push
+git tag
+git branch
+explain branches
+    local
+    need to switch in-place rather than having a different checkout
+git submodules: alternative to svn externals (never worked with it; try to use maven dependency management for this - intellij is quite cool)
+git svn (to work with an SVN server; or to forever migrate existing SVN history to a GIT repository)
+    - can discuss separately if you are interested
+        - git svn fetch [--fetch-all]
+        - git svn rebase
+        - git svn dcommit
+        - git rebase
+        - history needs to be linear
+        - can be used to merge SVN history (much nicer than SVN merging, since it properly merges across directory renames)
+used mostly in tools
+    git log http://youtu.be/RXSriVcoI70
+    git diff http://youtu.be/RXSriVcoI70
+    git blame
+git aliases
+    share mine
+
+TODO: migration from SVN
+    - git-svn (git core feature)
+        - git svn clone --username=cristian --prefix=svn/ --stdlayout --authors-file=authors-mapping.txt https://svn.xaton.com/modules/incubator/xaton-server-status/ .
+        - authors-mapping.txt:
+            cristian = Cristian Vasile Mocanu <cmocanu@mobiquityint.com>
+            ionut = Ionut Pruteanu <ipruteanu@mobiquityinc.com>
+            john = John Spangenberg <jspangenberg@mobiquityinc.com>
+            robin = Robin Bezuijen <rbezuijen@mobiquityinc.com>
+        - you may want to cleanup the "git-svn-id" stuff from the commit messages:
+            git filter-branch --force --msg-filter 'sed -e "/git-svn-id:/d"' -- --all
+        - and clean-up garbage
+            git reflog expire --all
+            git gc --aggressive
+            // also delete all lines in the file .git/packed-refs referring to /original (old branches before re-writing commit messages)
+
+TODO: workshop
+
+Workflows
+---------
+central repo way
+    - like in svn
+github way
+    - separate public repos for each developer
+    - send pull request
+    - more overhead, but allows the lead developer to check the code before pulling code
+git flow
+
+
+================================================================================
+
+
+Slides
+------
+
+o agenda
+o presentation
+    o git
+        o differences with SVN
+            o distributed vs. central repo
+                o each developer has the entire history
+                o how to communicate with servers
+                o sha1 hash instead of sequential commit number (there is no sequence when you are working distributed)
+                    a275ed221ab6c19266e9420efc1ce55e374c02d0
+                o SVN vs GIT history
+                    - linear history (no real branches; simulated using directories) vs. branching history
+                    - GIT has as history a DAG
+            o 
+    o git flow
+o review
+o hand-on workshop
+
