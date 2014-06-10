@@ -31,6 +31,19 @@ setup ssh keys
         - windows: puttygen
         - linux/mac: openssh
     - add them to the github account
+    - windows
+        - /etc/profile
+            # set default protocol for 'plink'
+            export PLINK_PROTOCOL=ssh
+            GIT_SSH=/d/Boxes/Dropbox/Programs/Network/putty/plink.exe
+            export GIT_SSH
+        - make sure the server key is known:
+            /d/Boxes/Dropbox/Programs/Network/putty/plink.exe git@github.com:cvmocanu/git-presentation.git
+        - add remote
+            git remote add origin git@github.com:cvmocanu/git-presentation.git
+        - push
+            git push -u origin master
+
 todo: check the github gui for windows
 git init
     TODO: explain that you can use it locally (to version documents): when you feel lazy about creating a remote repo on github or bitbucket
