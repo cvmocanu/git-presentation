@@ -9,19 +9,6 @@
 GIT presentation
 ----------------
 
-Tools
------
-- IntelliJ
-- TortoiseGit
-
-Concepts:
----------
-DAG of commits
-branches are labels
-    explain the HEAD label (points to the current branch)
-tags are immutable labels
-
-
 Commands (show slides of how each command modified the DAG):
 ------------------------------------------------------------
 setup username and email
