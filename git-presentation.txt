@@ -33,6 +33,7 @@ setup ssh keys
     - add them to the github account
 todo: check the github gui for windows
 git init
+    TODO: explain that you can use it locally (to version documents): when you feel lazy about creating a remote repo on github or bitbucket
 git ignore (or manually edit a per-directory .gitignore file)
     - explain that git only tracks files, so if you want to track an empty dir, just put a .gitignore file inside, and put a comment in that file stating why you want an empty dir)
 git add (explain difference with 'svn add', not used to add files, used to stage a snapshot of changes; demo on how to use it for a added, modified, and deleted file)
