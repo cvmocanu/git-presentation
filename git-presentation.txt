@@ -126,3 +126,21 @@ o presentation
 o review
 o hand-on workshop
 
+================================================================================
+
+Workshop
+--------
+o git init
+o mention about git config files
+o explain the staging area
+o git add
+o git rm
+0 git commit
+o git reflog
+o git merge
+o git rebase
+o git fetch
+o git pull [--rebase]
+o listing, creating, and deleting branches
+o mention quickly about git aliases
+
