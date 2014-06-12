@@ -197,10 +197,10 @@
     <node id="n10">
       <data key="d6">
         <y:ShapeNode>
-          <y:Geometry height="30.0" width="69.0" x="94.5" y="185.0"/>
+          <y:Geometry height="30.0" width="76.0" x="87.5" y="185.0"/>
           <y:Fill color="#99CCFF72" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Bitstream Vera Sans Mono" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.625" modelName="custom" textColor="#000000" visible="true" width="61.796875" x="3.6015625" y="3.6875">master<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Bitstream Vera Sans Mono" fontSize="16" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="22.625" modelName="custom" textColor="#000000" visible="true" width="71.4296875" x="2.28515625" y="3.6875">develop<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
