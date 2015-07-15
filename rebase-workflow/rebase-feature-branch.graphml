@@ -20,14 +20,14 @@
           <y:Geometry height="59.0" width="190.0" x="344.0" y="100.0"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="custom" textColor="#000000" underlinedText="true" visible="true" width="175.375" x="7.3125" y="4.0">get latest changes on develop<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="custom" textColor="#000000" underlinedText="true" visible="true" width="169.38671875" x="10.306640625" y="4.0">get latest changes on master<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
               <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="-0.5" nodeRatioX="0.0" nodeRatioY="-0.5" offsetX="0.0" offsetY="4.0" upX="0.0" upY="-1.0"/>
             </y:ModelParameter>
           </y:NodeLabel>
-          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Bitstream Vera Sans Mono" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="148.4921875" x="20.75390625" y="23.0625">git checkout develop
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Bitstream Vera Sans Mono" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="141.267578125" x="24.3662109375" y="23.0625">git checkout master
 git pull --rebase<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
@@ -74,7 +74,7 @@ git push<y:LabelModel>
           <y:Geometry height="59.0" width="397.0" x="240.5" y="294.0"/>
           <y:Fill color="#E8EEF7" color2="#B7C9E3" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="custom" textColor="#000000" underlinedText="true" visible="true" width="218.03125" x="89.484375" y="4.0">rebase cool-feature on top of develop<y:LabelModel>
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="18.701171875" modelName="custom" textColor="#000000" underlinedText="true" visible="true" width="212.04296875" x="92.478515625" y="4.0">rebase cool-feature on top of master<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -82,7 +82,7 @@ git push<y:LabelModel>
             </y:ModelParameter>
           </y:NodeLabel>
           <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Bitstream Vera Sans Mono" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" modelName="custom" textColor="#000000" visible="true" width="386.904296875" x="5.0478515625" y="23.0625"># on cool-feature branch because of the previous step
-git rebase develop<y:LabelModel>
+git rebase master<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -236,7 +236,7 @@ git push --force-with-lease origin cool-feature<y:LabelModel>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
           <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="62.8046875" modelName="custom" textColor="#000000" visible="true" width="315.478515625" x="30.7607421875" y="9.242154261596852">Forced push is required because we are changing history 
 to make it look like we started the cool-feature branch from
-the current state of develop, and GitHub does  not allow
+the current state of master, and GitHub does  not allow
 to change history like this without forced push.<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
