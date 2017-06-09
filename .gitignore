@@ -4,3 +4,6 @@
 # PowerPoint temporary files
 ~*
 
+# LibreOffice locks
+.~lock.*#
+
