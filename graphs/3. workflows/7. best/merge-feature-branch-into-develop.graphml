@@ -405,7 +405,7 @@ doing the merge should be notified).<y:LabelModel>
           <y:Geometry height="121.84374999999989" width="441.0" x="712.2125765123515" y="377.00000000000006"/>
           <y:Fill color="#FFCC00" transparent="false"/>
           <y:BorderStyle color="#000000" type="line" width="1.0"/>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="59.875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="363.84765625" x="38.576171875" y="9.242154261596966">Forced push is required because we are changing history 
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="59.875" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="363.84765625" x="38.576171875" y="9.242154261596909">Forced push is required because we are changing history 
 to make it look like we started the cool-feature branch from
 the current state of master, and Git does  not allow
 to change history like this without forced push.<y:LabelModel>
@@ -415,7 +415,7 @@ to change history like this without forced push.<y:LabelModel>
               <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="-0.5" nodeRatioX="0.0" nodeRatioY="-0.4241474900304945" offsetX="0.0" offsetY="0.0" upX="0.0" upY="-1.0"/>
             </y:ModelParameter>
           </y:NodeLabel>
-          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="45.90625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="417.794921875" x="7.617599303463862" y="73.88182437589796">Never, ever, (ever!), use forced push on anything else
+          <y:NodeLabel alignment="center" autoSizePolicy="content" fontFamily="Dialog" fontSize="12" fontStyle="bold" hasBackgroundColor="false" hasLineColor="false" height="45.90625" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="417.794921875" x="7.617599303463862" y="73.8818243758979">Never, ever, (ever!), use forced push on anything else
 than your own feature branch. Otherwise you may lose some
 history of the project!<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
@@ -468,8 +468,8 @@ If you are not sure you have that option set correctly, execute this command:<y:
               <y:SmartNodeLabelModelParameter labelRatioX="0.0" labelRatioY="-0.5" nodeRatioX="0.0" nodeRatioY="-0.5" offsetX="0.0" offsetY="4.0" upX="0.0" upY="-1.0"/>
             </y:ModelParameter>
           </y:NodeLabel>
-          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Hack" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="372.455078125" x="5.75923050751112" y="23.0625"># at the very least, the unit tests should all pass
-mvn clean test<y:LabelModel>
+          <y:NodeLabel alignment="left" autoSizePolicy="content" fontFamily="Hack" fontSize="12" fontStyle="plain" hasBackgroundColor="false" hasLineColor="false" height="31.9375" horizontalTextPosition="center" iconTextGap="4" modelName="custom" textColor="#000000" verticalTextPosition="bottom" visible="true" width="170.166015625" x="106.90376175751112" y="23.0625"># run unit 
+# and integration tests<y:LabelModel>
               <y:SmartNodeLabelModel distance="4.0"/>
             </y:LabelModel>
             <y:ModelParameter>
@@ -750,7 +750,6 @@ to fix the unit tests<y:LabelModel>
       </data>
     </edge>
     <edge id="e19" source="n20" target="n21">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -761,7 +760,6 @@ to fix the unit tests<y:LabelModel>
       </data>
     </edge>
     <edge id="e20" source="n21" target="n22">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
@@ -780,7 +778,6 @@ to fix the unit tests<y:LabelModel>
       </data>
     </edge>
     <edge id="e21" source="n21" target="n8">
-      <data key="d9"/>
       <data key="d10">
         <y:PolyLineEdge>
           <y:Path sx="0.0" sy="0.0" tx="0.0" ty="0.0"/>
